@@ -9,6 +9,26 @@ pub struct PattyArgs {
     #[arg(long, short)]
     pub config: Option<PathBuf>,
 
+    /// Pattern Generator Mode
+    #[arg(long, short, required = true, default_value = "CSSerialWire")]
+    pub mode: String,
+
+    /// Pattern Pins
+    #[arg(long, short, required = true)]
+    pub pins: String,
+
+    /// Subset Pins
+    #[arg(long, short, required = true)]
+    pub subset: String,
+
+    /// Default vector
+    #[arg(long, short, required = true)]
+    pub vector: String,
+
+    /// Vector format on output pattern files
+    #[arg(long, short, required = true)]
+    pub format: String,
+
     /// Specify the pattern generator inputs
     #[arg(long, short, required = true)]
     pub input: Vec<String>,
