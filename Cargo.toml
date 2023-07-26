@@ -8,3 +8,6 @@ edition = "2018"
 
 [dependencies]
 clap = { version = "4.3.11", features = ["cargo", "derive"] }
+pest = "2.7.1"
+pest-ast = "0.3.4"
+pest_derive = "2.7.1"
