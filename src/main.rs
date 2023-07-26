@@ -1,4 +1,5 @@
 mod cli;
+mod infile_coresight;
 
 use clap::Parser;
 use cli::PattyArgs;

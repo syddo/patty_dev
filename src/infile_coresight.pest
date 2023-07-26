@@ -1,0 +1,13 @@
+// Line based parsing
+nonl            = _{ (!NEWLINE ~ ANY)+ }
+commentline     =  { "#" ~ nonl* }
+//udigcommentline =  { "\"" ~ nonl* }
+dataline        =  { !"#" ~ nonl* }
+line            =  { commentline  | dataline  }
+
+main = { SOI ~ line ~ (NEWLINE ~ line)+ ~ NEWLINE* ~ EOI }
+
+// udig_pattern_kw   = { "PATTERN_NAME" | "PATTERN_COMMENT" | "PATTERN_SENDREF" }
+// udig_pattern_expr = { udig_pattern_kw ~ ": " ~ param }
+
+// main = { SOI ~ (NEWLINE ~ udig_pattern_expr)* ~ NEWLINE* ~ EOI }
