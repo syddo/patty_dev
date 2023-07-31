@@ -1,0 +1,7 @@
+--mode swd
+--pins mypins
+--subset swdport
+--vector XXXX
+--format myformat
+--i myInput.pat
+--l myLib.pat
