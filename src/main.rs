@@ -1,4 +1,5 @@
 mod cli;
+mod pattern_file;
 
 use clap::Parser;
 use cli::PattyArgs;
