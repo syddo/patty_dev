@@ -1,0 +1,7 @@
+{  
+    "mode":"SWD", 
+    "pins":"mypins", 
+    "subset":"mysubset",
+    "vector":"myvectors",
+    "format":"myformat"
+}

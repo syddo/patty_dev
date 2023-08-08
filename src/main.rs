@@ -1,13 +1,11 @@
 mod cli;
 
-use clap::Parser;
-use cli::PattyArgs;
 
 fn main() {
     include_str!("../Cargo.toml");
     println!("Hello Dublin! This is Patty talking.");
 
-    let args: PattyArgs = PattyArgs::parse();
+    let args: cli::PattyArgs = cli::get_cli_args();
     println!("{:?}", args);
 
     // check for config file

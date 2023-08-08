@@ -37,3 +37,11 @@ pub struct PattyArgs {
     #[arg(long, short)]
     pub library: Vec<String>,
 }
+
+
+/// Reutrns the parsed CLI arguments
+/// 
+pub fn get_cli_args() -> PattyArgs {
+    return PattyArgs::parse();
+}
+
